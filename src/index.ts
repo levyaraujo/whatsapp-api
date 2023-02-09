@@ -4,7 +4,7 @@ import { router } from "./router";
 const app = express();
 app.use(router);
 app.use(express.urlencoded({ extended: true }));
-const port = 8080 || process.env.PORT;
+const port = process.env.PORT || 8080;
 
 
 
